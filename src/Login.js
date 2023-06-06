@@ -12,7 +12,7 @@ function Login() {
     const signIn=e=>{
         e.preventDefault();
         auth.signInWithEmailAndPassword(email, password).then(auth=>{
-            history.push('/')
+            history('/')
         }).catch(error=>alert(error.message))
     }
 
@@ -20,7 +20,7 @@ function Login() {
         e.preventDefault();
         auth.createUserWithEmailAndPassword(email, password).then((auth)=>{
             if(auth){
-                history.push('/')
+                history('/')
             }
         }).catch(error=>alert(error.message))
     }

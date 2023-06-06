@@ -1,9 +1,12 @@
 
 .checkout {
+    box-sizing: border-box;
+    width:100%;
     display: flex;
     padding: 20px;
     background-color: white;
-    height: max-content;
+    
+    
   }
   
   .checkout__ad {
@@ -16,3 +19,14 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
   }
+
+  @media(max-width:800px){
+ .checkout{
+    flex-direction: column;
+ }
+  }
+  
+  
+
+
+
